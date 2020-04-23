@@ -1,0 +1,13 @@
+<div class="col-sm-4 col-md-3 details order-last">
+  <p><strong>Client</strong><br />
+  {{ page.client }}</p>
+  <p><strong>Services</strong><br />
+  {{ page.services }}</p>
+  <p><strong>Tools</strong><br />
+  {{ page.tools }}</p>
+  {% if page.team %}
+    <p><strong>Team</strong><br />
+    {{ page.team }}</p>
+  {% endif %}
+  <br />
+</div>

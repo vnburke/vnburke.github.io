@@ -1,0 +1,429 @@
+/* Stylesheet for vnburke portfolio
+ *
+ * vanessanburke@gmail.com
+ * Last updated April 2020
+ */
+
+/* Colours */
+$primary-color: #2DA69D; // Teal
+$primary-muted: #348C85; // Dk Teal
+$second-color: #F2750C; // Orange
+$third-color: #F2B705; // Yellow
+$fourth-color: #0694B4; // Blue
+$muted-color: #024959; // Navy
+$muted-light: #8B8B8B; // Light Grey
+
+$text-color: #565656;
+$link-color: $primary-color;
+$hover-color: $primary-muted;
+
+/* Fonts */
+$disp-font: 'Montserrat', Arial, sans-serif;
+$body-font: 'Open Sans', Arial, sans-serif;
+
+$text-size: 1rem;
+$text-sm: 0.8rem;
+
+/* Layout */
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+/* Mixins */
+@mixin smallcap($color: #fff, $size: 0.8rem) {
+  font-family: $disp-font;
+  font-size: $size;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: $color;
+}
+
+/* Main definitions */
+body {
+  font-family: $body-font, sans-serif;
+  font-size: $text-size;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: $text-color;
+}
+
+
+// Wrappers to stick the footer to the bottom
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 12rem; /* Footer height */
+}
+
+/* Font definitions */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #414141;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+h4 {
+  color: $muted-color;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem
+}
+p {
+  font-size: $text-size;
+  line-height: 1.7em;
+}
+b, strong {
+  weight: 600;
+  color: $muted-color;
+}
+a, a:link {
+  color: $link-color;
+
+  &:hover { color: $hover-color; }
+  &.active { color: $muted-color; }
+}
+
+@media screen and (min-width: $break-lg) {
+  body, p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Images */
+img.icon { // Footer icons
+  width: 32px;
+  margin-right: 0.5rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+svg.icon {
+  fill: $muted-color;
+  margin-right: 10px;
+
+  &.linkedin {
+    margin-top: -7px;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: $link-color;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  @include smallcap;
+}
+.btn-primary:hover, .btn-primary.active,
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: $hover-color;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+/* Navigation */
+.navbar {
+  background: rgba(255,255,255, 0.8);
+  padding: 1.5rem;
+}
+.navbar-light {
+
+  .navbar-brand {
+    @include smallcap($primary-color, 1.1rem);
+    margin-right: 0;
+    .desc {
+      font-family: $body-font, sans-serif;
+      font-style: italic;
+      font-weight: 300;
+      text-transform: none;
+      letter-spacing: normal;
+      color: $text-color;
+      display: inline-block;
+    }
+    @media screen and (max-width: $break-md) {
+      font-size: 1.5rem;
+      .desc {
+        display: none;
+      }
+    }
+    &:hover, &.active { color: $hover-color; }
+  }
+  .navbar-nav {
+    @include smallcap($primary-color);
+    flex-direction: row;
+    margin-top: 0.5rem;
+
+    .nav-link {
+      color: $link-color;
+      padding: 0 1rem;
+
+      &:hover { color: $hover-color; }
+    }
+    .nav-link.active {
+      color: $muted-color;
+    }
+    @media screen and (min-width: $break-md) {
+      .nav-item:last-child .nav-link {
+        padding-right: 0;
+      }
+    }
+  }
+
+}
+
+/* Jumbotron */
+.jumbotron .container {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.75rem;
+  line-height: 1.5em;
+
+  &.sm {
+    margin: 1em 0;
+    font-size: 1.3rem;
+  }
+  &.med {
+    @extend h2;
+  }
+}
+
+.sidebar {
+  margin-top: 1rem;
+
+  &, & p {
+    font-size: 0.9rem;
+    line-height: 1.7em;
+  }
+}
+@media screen and (min-width: $break-lg) {
+  .sidebar, .sidebar p {
+    font-size: 1rem;
+  }
+}
+
+/* Project List */
+// Filters
+#projFilters {
+  margin-bottom: 1rem;
+
+  .btn {
+    @include smallcap($muted-light);
+    border-radius: 1rem;
+    margin-right: 5px;
+  }
+  .btn:hover {
+    text-decoration: underline;
+  }
+  .btn.print:hover { color: $primary-color; }
+  .btn.web:hover { color: $second-color; }
+  .btn.digital:hover { color: $third-color; }
+  .btn.data:hover { color: $fourth-color; }
+  .btn.active {
+    color: #fff;
+    background-color: $muted-light;
+    font-weight: 400;
+  }
+  .btn.print.active { background-color: $primary-color; }
+  .btn.web.active { background-color: $second-color; }
+  .btn.digital.active { background-color: $third-color; }
+  .btn.data.active { background-color: $fourth-color; }
+  .btn.active:hover { color: #fff; }
+}
+
+// Project grid container
+.flex-container {
+  margin: 0 auto;
+  position: relative;
+
+  .grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  .grid-item {
+    flex-basis: 100%;
+    -ms-flex: auto;
+    width: 259px;
+    margin-bottom: 15px;
+    position: relative;
+    display: none;
+    overflow: hidden;
+  }
+  .show {
+    display: block;
+  }
+  img {
+    width: 100%;
+    border-top: 6px solid;
+    transition: 0.5s ease;
+
+  }
+  .grid-item:hover img {
+    -ms-transform: scale(1.1); /* IE 9 */
+    transform: scale(1.1); /* Standard syntax */
+    filter: grayscale(75%) blur(2px);
+    overflow: hidden;
+  }
+  .grid-item.web img { border-color: $second-color; }
+  .grid-item.digital img { border-color: $third-color; }
+  .grid-item.print img { border-color: $primary-color; }
+  .grid-item.branding img { border-color: $fourth-color; }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(34,34,34, 0.25);
+  }
+  .title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .overlay:hover {
+    opacity: 1;
+  }
+  @media screen and (min-width: $break-md) {
+    .grid-item, .overlay {
+      flex-basis: calc(50% - 15px);
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: $break-lg) {
+     .grid-item, .overlay {
+      flex-basis: calc(100% / 3 - 15px);
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+/* Project Page */
+// Title banner
+.banner {
+  position: relative;
+  height: 40vh;
+  margin-bottom: 1rem;
+
+  /* Create the parallax scrolling effect */
+  //background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  /* Banner images */
+  &.revex { background-image: url('/assets/images/revex-banner.jpg'); }
+  &.cs-intranet { background-image: url('/assets/images/cs-intranet-banner.jpg'); }
+  &.cs-campaign { background-image: url('/assets/images/cs-campaign-banner.jpg'); }
+  &.sci-intranet { background-image: url('/assets/images/sci-intranet-banner.jpg'); }
+  &.physics-shops { background-image: url('/assets/images/physics-shops-banner.jpg'); }
+  &.eclass { background-image: url('/assets/images/eclass-banner.jpg'); }
+
+  h1 {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  @media screen and (min-width: $break-md) {
+    h1 { font-size: 3.5rem; }
+  }
+  @media screen and (min-width: $break-lg) {
+    h1 { font-size: 4rem; }
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: $break-xl) {
+  .banner {
+    background-attachment: scroll;
+  }
+}
+
+svg.back {
+  width: 24px;
+  height: 24px;
+  fill: $primary-color;
+  margin-top: 10px;
+}
+
+.details p {
+  font-size: $text-sm;
+  margin-top: 1em;
+
+  strong {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+  }
+}
+
+.portfolio {
+  .col, .col-md-4, .col-md-6, .col-md-8 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: $muted-color;
+  color: rgba(255,255,255, 0.8);
+  padding: 2rem 0;
+  font-size: 0.7rem;
+  font-weight: 300;
+
+  p {
+    font-size: $text-sm;
+    margin-top: 0.2em;
+  }
+}

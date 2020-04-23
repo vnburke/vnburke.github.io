@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+
+    <div id="page-container">
+    <div id="content-wrap">
+
+      <nav class="navbar navbar-expand-md navbar-light sticky-top">
+  <div class="container d-flex flex-column flex-sm-row">
+    <a class="navbar-brand" href="/">Vanessa Burke<div class="desc"> &mdash; Solution Designer</div></a>
+    <div class="p-2">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          <a href="/" class="nav-link active">
+          Work
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link">
+          About
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/contact.html" class="nav-link">
+          Contact
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="lead">Creating connections and striving to have meaningful impact by <strong>problem solving for humans</strong> through <strong>design</strong>.</p>
+        <a class="btn btn-primary btn-lg" href="/contact.html" role="button">Let's Collaborate</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="projFilters">
+  <button class="btn active" onclick="filterSelection('all')">All</button>
+  <button class="btn print" onclick="filterSelection('print')">Print</button>
+  <button class="btn web" onclick="filterSelection('web')">Web</button>
+  <button class="btn digital" onclick="filterSelection('digital')">Digital Solutions</button>
+  <!--<button class="btn data" onclick="filterSelection('data')">Data Visualization</button>-->
+</div>
+
+<div class="container flex-container">
+  <div class="grid-row">
+    
+    <a href="/projects/revex.html" class="grid-item print">
+        <img src="/assets/images/revex-logo.jpg" />
+        <div class="overlay">
+          <div class="title">Reverse Expo</div>
+        </div>
+    </a>
+    
+    <a href="/projects/sci-intranet.html" class="grid-item web">
+        <img src="/assets/images/sci-intranet-thumb.jpg" />
+        <div class="overlay">
+          <div class="title">Science Intranet</div>
+        </div>
+    </a>
+    
+    <a href="/projects/eclass.html" class="grid-item web">
+        <img src="/assets/images/eclass-thumb.jpg" />
+        <div class="overlay">
+          <div class="title">eClass</div>
+        </div>
+    </a>
+    
+    <a href="/projects/cs-campaign.html" class="grid-item print">
+        <img src="/assets/images/cs-campaign-thumb.jpg" />
+        <div class="overlay">
+          <div class="title">Computing Science Print Campaign</div>
+        </div>
+    </a>
+    
+    <a href="/projects/cs-intranet.html" class="grid-item web">
+        <img src="/assets/images/cs-intranet-thumb.jpg" />
+        <div class="overlay">
+          <div class="title">Computing Science Intranet</div>
+        </div>
+    </a>
+    
+    <a href="/projects/physics-shops.html" class="grid-item digital">
+        <img src="/assets/images/physics-shops-thumb.jpg" />
+        <div class="overlay">
+          <div class="title">Physics Shop Chargeback System</div>
+        </div>
+    </a>
+    
+  </div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("grid-item");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("projFilters");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = btnContainer.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+      <footer>
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div>
+              <a href="mailto:vanessanburke@gmail.com"><img src="/assets/images/iconmonstr-email-10.svg" alt="Email Vanessa" class="icon" /></a>
+              <a href="https://www.linkedin.com/in/vanessa-burke/" target="_blank"><img src="/assets/images/iconmonstr-linkedin-4.svg" alt="LinkedIn" class="icon" /></a>
+            </div>
+            <div>
+                <p>&copy; 2020 Vanessa Burke</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
+
+    <!-- Bootstrap Optional Javascript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

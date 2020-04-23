@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+  <div class="container d-flex flex-column flex-sm-row">
+    <a class="navbar-brand" href="/">Vanessa Burke<div class="desc"> &mdash; Solution Designer</div></a>
+    <div class="p-2">
+      <ul class="navbar-nav ml-auto">
+        {% for item in site.data.nav %}
+        <li class="nav-item">
+          <a href="{{ item.link }}" {% if page.url != item.link %}class="nav-link"{% endif %}{% if page.url == item.link %}class="nav-link active"{% endif %}>
+          {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

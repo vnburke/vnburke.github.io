@@ -1,0 +1,183 @@
+/* Stylesheet for vnburke portfolio vanessanburke@gmail.com Last updated April 2020 */
+/* Colours */
+/* Fonts */
+/* Layout */
+/* Mixins */
+/* Main definitions */
+body { font-family: "Open Sans", Arial, sans-serif, sans-serif; font-size: 1rem; font-weight: 300; line-height: 1.7em; color: #565656; }
+
+#page-container { position: relative; min-height: 100vh; }
+
+#content-wrap { padding-bottom: 12rem; /* Footer height */ }
+
+/* Font definitions */
+h1, h2, .lead.med, h3, h4, h5, h6 { font-weight: 300; line-height: 1.5em; color: #414141; }
+
+h1 { font-size: 3rem; }
+
+h2, .lead.med { font-weight: 400; font-size: 1.75rem; }
+
+h3 { font-weight: 400; font-size: 1.5rem; }
+
+h4 { color: #024959; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.07rem; }
+
+p { font-size: 1rem; line-height: 1.7em; }
+
+b, strong { weight: 600; color: #024959; }
+
+a, a:link { color: #2DA69D; }
+
+a:hover, a:link:hover { color: #348C85; }
+
+a.active, a:link.active { color: #024959; }
+
+@media screen and (min-width: 992px) { body, p { font-size: 1.1rem; } }
+
+/* Images */
+img.icon { width: 32px; margin-right: 0.5rem; }
+
+img.icon:hover { opacity: 0.8; }
+
+svg.icon { fill: #024959; margin-right: 10px; }
+
+svg.icon.linkedin { margin-top: -7px; }
+
+/* Button styles */
+.btn-primary { background-color: #2DA69D; border: none; border-radius: 0; padding: 1rem 1.5rem; margin: 1rem 0; font-family: "Montserrat", Arial, sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1rem; color: #fff; }
+
+.btn-primary:hover, .btn-primary.active, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle { background-color: #348C85; }
+
+hr { margin: 1.5em 0; }
+
+/* Navigation */
+.navbar { background: rgba(255, 255, 255, 0.8); padding: 1.5rem; }
+
+.navbar-light .navbar-brand { font-family: "Montserrat", Arial, sans-serif; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1rem; color: #2DA69D; margin-right: 0; }
+
+.navbar-light .navbar-brand .desc { font-family: "Open Sans", Arial, sans-serif, sans-serif; font-style: italic; font-weight: 300; text-transform: none; letter-spacing: normal; color: #565656; display: inline-block; }
+
+@media screen and (max-width: 768px) { .navbar-light .navbar-brand { font-size: 1.5rem; }
+  .navbar-light .navbar-brand .desc { display: none; } }
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand.active { color: #348C85; }
+
+.navbar-light .navbar-nav { font-family: "Montserrat", Arial, sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1rem; color: #2DA69D; flex-direction: row; margin-top: 0.5rem; }
+
+.navbar-light .navbar-nav .nav-link { color: #2DA69D; padding: 0 1rem; }
+
+.navbar-light .navbar-nav .nav-link:hover { color: #348C85; }
+
+.navbar-light .navbar-nav .nav-link.active { color: #024959; }
+
+@media screen and (min-width: 768px) { .navbar-light .navbar-nav .nav-item:last-child .nav-link { padding-right: 0; } }
+
+/* Jumbotron */
+.jumbotron .container { text-align: center; }
+
+.lead { font-size: 1.75rem; line-height: 1.5em; }
+
+.lead.sm { margin: 1em 0; font-size: 1.3rem; }
+
+.sidebar { margin-top: 1rem; }
+
+.sidebar, .sidebar p { font-size: 0.9rem; line-height: 1.7em; }
+
+@media screen and (min-width: 992px) { .sidebar, .sidebar p { font-size: 1rem; } }
+
+/* Project List */
+#projFilters { margin-bottom: 1rem; }
+
+#projFilters .btn { font-family: "Montserrat", Arial, sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1rem; color: #8B8B8B; border-radius: 1rem; margin-right: 5px; }
+
+#projFilters .btn:hover { text-decoration: underline; }
+
+#projFilters .btn.print:hover { color: #2DA69D; }
+
+#projFilters .btn.web:hover { color: #F2750C; }
+
+#projFilters .btn.digital:hover { color: #F2B705; }
+
+#projFilters .btn.data:hover { color: #0694B4; }
+
+#projFilters .btn.active { color: #fff; background-color: #8B8B8B; font-weight: 400; }
+
+#projFilters .btn.print.active { background-color: #2DA69D; }
+
+#projFilters .btn.web.active { background-color: #F2750C; }
+
+#projFilters .btn.digital.active { background-color: #F2B705; }
+
+#projFilters .btn.data.active { background-color: #0694B4; }
+
+#projFilters .btn.active:hover { color: #fff; }
+
+.flex-container { margin: 0 auto; position: relative; }
+
+.flex-container .grid-row { display: flex; flex-flow: row wrap; justify-content: flex-start; }
+
+.flex-container .grid-item { flex-basis: 100%; -ms-flex: auto; width: 259px; margin-bottom: 15px; position: relative; display: none; overflow: hidden; }
+
+.flex-container .show { display: block; }
+
+.flex-container img { width: 100%; border-top: 6px solid; transition: 0.5s ease; }
+
+.flex-container .grid-item:hover img { -ms-transform: scale(1.1); /* IE 9 */ transform: scale(1.1); /* Standard syntax */ filter: grayscale(75%) blur(2px); overflow: hidden; }
+
+.flex-container .grid-item.web img { border-color: #F2750C; }
+
+.flex-container .grid-item.digital img { border-color: #F2B705; }
+
+.flex-container .grid-item.print img { border-color: #2DA69D; }
+
+.flex-container .grid-item.branding img { border-color: #0694B4; }
+
+.flex-container .overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: .5s ease; background-color: rgba(34, 34, 34, 0.25); }
+
+.flex-container .title { color: #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; font-size: 1.5rem; }
+
+.flex-container .overlay:hover { opacity: 1; }
+
+@media screen and (min-width: 768px) { .flex-container .grid-item, .flex-container .overlay { flex-basis: calc(50% - 15px); margin-right: 15px; margin-bottom: 15px; } }
+
+@media screen and (min-width: 992px) { .flex-container .grid-item, .flex-container .overlay { flex-basis: calc(100% / 3 - 15px); margin-right: 15px; margin-bottom: 15px; } }
+
+/* Project Page */
+.banner { position: relative; height: 40vh; margin-bottom: 1rem; /* Create the parallax scrolling effect */ background-position: center; background-repeat: no-repeat; background-size: 100%; /* Banner images */ }
+
+.banner.revex { background-image: url("/assets/images/revex-banner.jpg"); }
+
+.banner.cs-intranet { background-image: url("/assets/images/cs-intranet-banner.jpg"); }
+
+.banner.cs-campaign { background-image: url("/assets/images/cs-campaign-banner.jpg"); }
+
+.banner.sci-intranet { background-image: url("/assets/images/sci-intranet-banner.jpg"); }
+
+.banner.physics-shops { background-image: url("/assets/images/physics-shops-banner.jpg"); }
+
+.banner.eclass { background-image: url("/assets/images/eclass-banner.jpg"); }
+
+.banner h1 { color: #fff; font-weight: 300; line-height: 1.1em; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
+
+@media screen and (min-width: 768px) { .banner h1 { font-size: 3.5rem; } }
+
+@media screen and (min-width: 992px) { .banner h1 { font-size: 4rem; } }
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1200px) { .banner { background-attachment: scroll; } }
+
+svg.back { width: 24px; height: 24px; fill: #2DA69D; margin-top: 10px; }
+
+.details p { font-size: 0.8rem; margin-top: 1em; }
+
+.details p strong { font-weight: 600; text-transform: uppercase; letter-spacing: 0.07rem; }
+
+.portfolio .col, .portfolio .col-md-4, .portfolio .col-md-6, .portfolio .col-md-8 { padding-left: 7.5px; padding-right: 7.5px; }
+
+.portfolio img { width: 100%; margin-bottom: 15px; }
+
+/* Footer */
+footer { position: absolute; bottom: 0; width: 100%; height: 8rem; background-color: #024959; color: rgba(255, 255, 255, 0.8); padding: 2rem 0; font-size: 0.7rem; font-weight: 300; }
+
+footer p { font-size: 0.8rem; margin-top: 0.2em; }
+
+/*# sourceMappingURL=styles.css.map */
