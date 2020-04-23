@@ -129,11 +129,15 @@ svg.icon {
   border-radius: 0;
   padding: 1rem 1.5rem;
   margin: 1rem 0;
+
   @include smallcap;
 }
 .btn-primary:hover, .btn-primary.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
   background-color: $hover-color;
+}
+a.btn, a.btn-primary {
+  color: #fff;
 }
 
 hr {
