@@ -32,8 +32,8 @@ title: About
   <div class="row">
     <div class="col-sm">
       <!-- <h2>Meet Vanessa</h2> -->
-      <p class="lead sm"><strong>Hi, I'm Vanessa</strong>&mdash;a problem solver, designer and user-experience enthusiast with over 15 years of experience engaging with stakeholders, and developing and championing digital (web) solutions. Based in Edmonton, Canada, I am excited by <strong>challenging problems</strong> and opportunities to <strong>grow and build our communities</strong>.</p>
-      <hr>
+      <h2><strong>Hi, I'm Vanessa</strong>&mdash;a problem solver, designer and user-experience enthusiast excited by <strong>challenging problems</strong> and opportunities to <strong>grow and build our communities</strong>.</h2>
+      <p>Based in Edmonton, Canada, I have over 15 years of experience engaging with stakeholders, and developing and championing digital (web) solutions.</p>
       <h2>Fuelled by <strong>coffee</strong> and <strong>curiosity</strong></h2>
       <p>I earned my Bachelor of Design in Visual Communication (with a specialization in Computing Science) from the University of Alberta. I have been learning ever since, taking courses of all kinds over the years&mdash;from photography to data science to <a href="https://www.edmonton.ca/programs_services/landscaping_gardening/compost-education.aspx">composting</a>. My current interests include a mix of data visualization, sustainability, leadership, and diversity.</p>
 
