@@ -13,7 +13,7 @@ $fourth-color: #0694B4; // Blue
 $muted-color: #024959; // Navy
 $muted-light: #8B8B8B; // Light Grey
 
-$text-color: #565656;
+$text-color: #343434;
 $link-color: $primary-color;
 $hover-color: $primary-muted;
 
@@ -21,7 +21,7 @@ $hover-color: $primary-muted;
 $disp-font: 'Montserrat', Arial, sans-serif;
 $body-font: 'Open Sans', Arial, sans-serif;
 
-$text-size: 1rem;
+$text-size: 0.9rem;
 $text-sm: 0.8rem;
 
 /* Layout */
@@ -43,11 +43,16 @@ $break-xl: 1200px;
 body {
   font-family: $body-font, sans-serif;
   font-size: $text-size;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7em;
   color: $text-color;
+  opacity: 1;
+  transition: 0.7s opacity;
 }
-
+body.fade {
+  opacity: 0;
+  transition: none;
+}
 
 // Wrappers to stick the footer to the bottom
 #page-container {
@@ -63,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.5em;
   color: #414141;
+  margin: 1rem 0;
 }
 h1 {
   font-size: 3rem;
@@ -77,14 +83,15 @@ h3 {
 }
 h4 {
   color: $muted-color;
+  font-family: $disp-font;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.07rem
 }
 p {
   font-size: $text-size;
-  line-height: 1.7em;
+  line-height: 1.8em;
 }
 b, strong {
   weight: 600;
@@ -92,6 +99,7 @@ b, strong {
 }
 a, a:link {
   color: $link-color;
+  transition: 0.3s;
 
   &.btn, &.btn-primary {
     color: #fff;
@@ -99,10 +107,13 @@ a, a:link {
   &:hover { color: $hover-color; }
   &.active { color: $muted-color; }
 }
+.btn.focus, .btn:focus {
+  box-shadow: none !important;
+}
 
 @media screen and (min-width: $break-lg) {
   body, p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -129,11 +140,12 @@ svg.icon {
 .btn-primary {
   background-color: $link-color;
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 1rem 1.5rem;
   margin: 1rem 0;
-
   @include smallcap;
+  font-weight: 500;
+  transition: 0.3s;
 }
 .btn-primary:hover, .btn-primary.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -153,6 +165,7 @@ hr {
 
   .navbar-brand {
     @include smallcap($primary-color, 1.1rem);
+    font-weight: 400;
     margin-right: 0;
     .desc {
       font-family: $body-font, sans-serif;
@@ -173,6 +186,7 @@ hr {
   }
   .navbar-nav {
     @include smallcap($primary-color);
+    font-weight: 500;
     flex-direction: row;
     margin-top: 0.5rem;
 
@@ -201,6 +215,7 @@ hr {
 
 .lead {
   font-size: 1.75rem;
+  //font-weight: 400;
   line-height: 1.5em;
 
   &.sm {
@@ -215,14 +230,25 @@ hr {
 .sidebar {
   margin-top: 1rem;
 
-  &, & p {
-    font-size: 0.9rem;
-    line-height: 1.7em;
+  &, & p, & li {
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    & li {
+      color: $muted-light;
+      margin-bottom: 0.5rem;
+      line-height: 1.5em;
+    }
   }
 }
 @media screen and (min-width: $break-lg) {
-  .sidebar, .sidebar p {
-    font-size: 1rem;
+  .sidebar, .sidebar p, .sidebar li {
+    font-size: 0.9rem;
   }
 }
 
@@ -233,7 +259,8 @@ hr {
 
   .btn {
     @include smallcap($muted-light);
-    border-radius: 1rem;
+    font-weight: 500;
+    border-radius: 2px;//1rem;
     margin-right: 5px;
   }
   .btn:hover {
@@ -244,15 +271,16 @@ hr {
   .btn.digital:hover { color: $third-color; }
   .btn.data:hover { color: $fourth-color; }
   .btn.active {
-    color: #fff;
-    background-color: $muted-light;
-    font-weight: 400;
+    //color: #fff;
+    //background-color: $muted-light;
+    border: 1px solid $muted-light;
+
   }
-  .btn.print.active { background-color: $primary-color; }
-  .btn.web.active { background-color: $second-color; }
-  .btn.digital.active { background-color: $third-color; }
-  .btn.data.active { background-color: $fourth-color; }
-  .btn.active:hover { color: #fff; }
+  .btn.print.active { border-color: $primary-color; color: $primary-color; }
+  .btn.web.active { border-color: $second-color; color: $second-color; }
+  .btn.digital.active { border-color: $third-color; color: $third-color; }
+  .btn.data.active { border-color: $fourth-color; color: $fourth-color;}
+  //.btn.active:hover { color: #fff; }
 }
 
 // Project grid container
