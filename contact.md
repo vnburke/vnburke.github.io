@@ -22,6 +22,8 @@ title: Contact
       <ul>
         <li>Data visualization</li>
         <li>Sustainability</li>
+        <li>Education</li>
+        <li>Leadership</li>
         <li>Diversity and inclusion (particularly in <a href="https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics">STEM</a>)</li>
       </ul>
       <a href="/about" class="btn btn-primary">More about me</a>
