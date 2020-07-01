@@ -13,7 +13,7 @@ team: Ethan Gaudet (Web Developer)
   <div class="row">
     {% include proj-details.html %}
     <div class="col-sm">
-      <h2>Overview</h2>
+      <h2>Background</h2>
       <p>The Department of Physics is home to a number of in-house shops which provide services to their faculty members and graduate students for a nominal fee. However, the department's administrative staff was spending a lot of hours managing the chargeback process for these shops and technicians. Each shop had a different way of tracking hours and materials and most of this was still done on paper. Then, every quarter, the department had someone manually compile the reports from each shop for each researcher with a breakdown of their charges. They approached us to help them with a cost-effective way to streamline this process.</p>
       <h2>Solution</h2>
       <p>After weighing a number of options, we decided that we could implement a solution using familiar and free tools&mdash;the Google Suite. We were able to leverage Google forms, sheets and scripts to create an easy-to-use online system for tracking time and materials for the technicians, which then allowed the department administrators to run automated reports on the data whenever necessary. Approximately three weeks of administrative overhead was saved every quarter.</p>
