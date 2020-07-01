@@ -13,7 +13,7 @@ team:
   <div class="row">
     {% include proj-details.html %}
     <div class="col-sm">
-      <h2>Overview</h2>
+      <h2>Background</h2>
       <p>The Faculty of Science was looking for a way to better  communicate with its departments, reduce the amount of duplicated information that was being maintained by each unit and optimize its external web presence by removing competing, internal information.</p>
       <h2>Solution</h2>
       <p>The <em>Science Intranet</em> was created to support approximately 300 faculty and 700 support staff members in Science, and was the result of many feedback sessions, surveys and user experience meetings with members of every department in Science. A customized Google Site, aligned with the institutional look and feel, allowed multiple contributors from various groups in the Dean's office to easily update content. As well, having this space gave the Associate Deans a place to record procedures and processes, allowing for greater continuity as roles changed.</p>

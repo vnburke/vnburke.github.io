@@ -13,7 +13,7 @@ team:
   <div class="row">
     {% include proj-details.html %}
     <div class="col-sm">
-      <h2>Overview</h2>
+      <h2>Background</h2>
       <p>What started off as the reimagining of a single brochure spun into a full, integrated outreach campaign including print brochures for the undergraduate and graduate programs, roll-up banners for outreach events as well as various flyers and posters. The design aimed to highlight the unique programs and offerings of computing science while working within the institutional style guide. Perhaps most important of all, we aimed to break stereotypes that some people may have about computing&mdash;looking to showcase the diverse, collaborative nature of the field.</p>
       <br />
     </div>

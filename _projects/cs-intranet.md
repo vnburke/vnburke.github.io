@@ -13,10 +13,10 @@ team:
   <div class="row">
     {% include proj-details.html %}
     <div class="col-sm">
-      <h2>Overview</h2>
+      <h2>Background</h2>
       <p>In large organizations like the University of Alberta, there is always an overwhelming amount of information to keep track of. This can lead to many department-wide emails (then having to later search those emails for information) and an overall loss in productivity. The Department of Computing Science was no stranger to this. In a post-secondary setting, there is also the added complexity of the competing priorities of research, teaching and administration, and communication between groups. To help faculty and staff members keep track of the information relevant to them and access the administrative applications necessary to get work done, the <em>Computing Science (CS) Intranet</em> was created.</p>
       <h2>Solution</h2>
-      <p>The <em>CS Intranet</em> was built in close consultation with department stakeholders. A fully customized theme matching the institutional look and feel was layered upon the open source content management systems (CMS), <em>Drupal</em>. In addition to being a hub of information for faculty and staff members, select administrative workflows were also transformed and integrated into the system, streamlining processes and eliminating excess emails and paper forms.</p>
+      <p>The <em>CS Intranet</em> was built in close consultation with department stakeholders. A fully customized theme matching the institutional look and feel was layered upon the open source content management system (CMS), <em>Drupal</em>. In addition to being a hub of information for faculty and staff members, select administrative workflows were transformed and integrated into the system, streamlining processes and eliminating excess emails and paper forms.</p>
       <h2>Highlights</h2>
       <p><strong>Integrated people and access tracking</strong></p>
       <ul>

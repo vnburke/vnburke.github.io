@@ -16,9 +16,8 @@ title: Contact
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      <h2>Intrigued?</h2>
-      <p>Have an interesting project on the go? Want to collaborate?</p>
-      <p>My current interests include:</p>
+      <h2>Let's collaborate</h2>
+      <p>Have an interesting project on the go? My current interests include:</p>
       <ul>
         <li>Data visualization</li>
         <li>Sustainability</li>
