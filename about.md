@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 <script>
-  var descriptors = ['UX specialist', 'front-end dev', 'creative', 'manager', 'problem solver'];
+  var descriptors = ['UX specialist', 'front-end dev', 'creative', 'problem solver'];
 
   textSequence(0);
   function textSequence(i) {
@@ -22,7 +22,7 @@ title: About
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <p class="lead">Your friendly neighbourhood <strong id="sequence">designer</strong>.</p>
+        <p class="lead">Your friendly neighbourhood<br /><strong id="sequence">designer</strong>.</p>
       </div>
     </div>
   </div>
