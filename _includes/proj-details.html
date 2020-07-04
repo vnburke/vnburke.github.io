@@ -1,13 +1,13 @@
-<div class="col-sm-4 col-md-3 details order-last">
-  <p><strong>Client</strong><br />
-  {{ page.client }}</p>
-  <p><strong>Services</strong><br />
-  {{ page.services }}</p>
-  <p><strong>Tools</strong><br />
-  {{ page.tools }}</p>
+<div class="col-sm-4 col-md-3 sidebar order-last">
+  <h4>Client</h4>
+  <p>{{ page.client }}</p>
+  <h4>Services</h4>
+  <p>{{ page.services }}</p>
+  <h4>Tools</h4>
+  <p>{{ page.tools }}</p>
   {% if page.team %}
-    <p><strong>Team</strong><br />
-    {{ page.team }}</p>
+    <h4>Team</h4>
+    <p>{{ page.team }}</p>
   {% endif %}
   <br />
 </div>
