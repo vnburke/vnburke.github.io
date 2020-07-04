@@ -102,7 +102,7 @@ a, a:link {
   color: $link-color;
   transition: 0.3s;
 
-  &.btn, &.btn-primary {
+  &.btn, &.btn-primary, &.btn-primary:hover {
     color: #fff;
   }
   &:hover { color: $hover-color; }
@@ -151,7 +151,6 @@ svg.icon {
 .btn-primary:hover, .btn-primary.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
   background-color: $hover-color;
-  color: #fff;
 }
 
 hr {
