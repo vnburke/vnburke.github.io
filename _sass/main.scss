@@ -228,7 +228,8 @@ hr {
   }
 }
 
-.sidebar {
+/* Sidebar, Callout */
+.sidebar, .callout {
   margin-top: 1rem;
 
   &, & p, & li {
@@ -246,9 +247,33 @@ hr {
       line-height: 1.5em;
     }
   }
+
+  .lead {
+    color: $text-color;
+    font-size: 3rem;
+  }
+  .desc {
+    color: $muted-light;
+    font-size: $text-sm;
+    line-height: 1.5em;
+  }
 }
+
+.callout {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+
+  &.table td {
+    border-width: 6px;
+    vertical-align: middle;
+  }
+
+}
+
 @media screen and (min-width: $break-lg) {
-  .sidebar, .sidebar p, .sidebar li {
+  .sidebar, .sidebar p, .sidebar li,
+  .callout, .callout p, .callout li {
     font-size: 0.9rem;
   }
 }
@@ -435,24 +460,7 @@ svg.back {
   margin-right: 0.2em;
   &.web { color: $second-color; }
 }
-.callout {
-  margin-left: 0;
-  margin-right: 0;
 
-  .callout-item {
-    border-top: 6px solid lighten($muted-light, 30%);
-    margin-left: -15px;
-    padding: 0.5em;
-  }
-  .lead {
-    margin-bottom: 0;
-  }
-  .desc {
-    margin-top: 0;
-    color: $muted-light;
-    font-size: $text-sm;
-  }
-}
 .portfolio {
   .col, .col-md-4, .col-md-6, .col-md-8 {
     padding-left: 7.5px;
