@@ -1,11 +1,12 @@
 ---
 layout: project
 title: eClass
+descriptor: Central support for teaching and learning
 abbr: eclass
 type: web
 image: /assets/images/eclass-thumb.jpg
 client: Vice-Provost and Associate Vice-President (Information Technology), University of Alberta
-services: Prototyping, Front End Development
+services: Communications, Prototyping, Front-End Development
 tools: Adobe Illustrator, Adobe Photoshop, Moodle LMS
 team: Centre for Teaching and Learning (CTL)
 ---

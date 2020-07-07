@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Computing Science Print Campaign
+descriptor: Reimagining Computing Science
 abbr: cs-campaign
 type: print
 image: /assets/images/cs-campaign-thumb.jpg

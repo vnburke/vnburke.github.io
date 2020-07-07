@@ -146,7 +146,7 @@ svg.icon {
   margin: 1rem 0;
   @include smallcap;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .btn-primary:hover, .btn-primary.active,
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -233,7 +233,7 @@ hr {
 
   &, & p, & li {
     color: $muted-light;
-    font-size: 0.8rem;
+    font-size: $text-sm;
     line-height: 1.8em;
   }
 
@@ -253,7 +253,7 @@ hr {
   }
 }
 
-/* Project List */
+/* Project Directory */
 // Filters
 #projFilters {
   margin-bottom: 1rem;
@@ -284,7 +284,7 @@ hr {
   //.btn.active:hover { color: #fff; }
 }
 
-// Project grid container
+// Project directory grid container
 .flex-container {
   margin: 0 auto;
   position: relative;
@@ -303,7 +303,7 @@ hr {
     display: none;
     overflow: hidden;
   }
-  .show {
+  .grid-item.show {
     display: block;
   }
   img {
@@ -387,10 +387,7 @@ hr {
   &.physics-shops { background-image: url('/assets/images/physics-shops-banner.jpg'); }
   &.eclass { background-image: url('/assets/images/eclass-banner.jpg'); }
 
-  h1 {
-    color: #fff;
-    font-weight: 300;
-    line-height: 1.1em;
+  .title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -398,6 +395,17 @@ hr {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  h1 {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.1em;
+  }
+  .desc {
+    @extend h3;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
   }
   @media screen and (min-width: $break-md) {
     h1 { font-size: 3.5rem; }
@@ -421,18 +429,30 @@ svg.back {
   margin-top: 10px;
 }
 
-// .details p {
-//   font-size: $text-sm;
-//   color: $muted-light;
-//   margin-top: 1em;
-//
-//   strong {
-//     font-weight: 600;
-//     text-transform: uppercase;
-//     letter-spacing: 0.07rem;
-//   }
-// }
+.numerals {
+  font-family: $disp-font;
+  //color: $muted-light;
+  margin-right: 0.2em;
+  &.web { color: $second-color; }
+}
+.callout {
+  margin-left: 0;
+  margin-right: 0;
 
+  .callout-item {
+    border-top: 6px solid lighten($muted-light, 30%);
+    margin-left: -15px;
+    padding: 0.5em;
+  }
+  .lead {
+    margin-bottom: 0;
+  }
+  .desc {
+    margin-top: 0;
+    color: $muted-light;
+    font-size: $text-sm;
+  }
+}
 .portfolio {
   .col, .col-md-4, .col-md-6, .col-md-8 {
     padding-left: 7.5px;

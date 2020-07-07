@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Computing Science Intranet
+descriptor: A hub for internal resources
 abbr: cs-intranet
 type: web
 image: /assets/images/cs-intranet-thumb.jpg

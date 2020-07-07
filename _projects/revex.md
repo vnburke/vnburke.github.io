@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Reverse Expo
+descriptor: Connecting accademia and industry
 abbr: revex
 type: print
 image: /assets/images/revex-logo.jpg

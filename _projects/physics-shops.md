@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Physics Shop Chargeback System
+descriptor: Transforming administrative processes in Physics
 abbr: physics-shops
 type: digital
 image: /assets/images/physics-shops-thumb.jpg
