@@ -215,8 +215,7 @@ hr {
 }
 
 .lead {
-  font-size: 2.25rem;
-  //font-weight: 400;
+  font-size: 2rem;
   line-height: 1.5em;
 
   &.sm {
@@ -238,19 +237,22 @@ hr {
     line-height: 1.8em;
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  ul.list-unstyled {
     & li {
       margin-bottom: 0.5rem;
       line-height: 1.5em;
     }
   }
 
+  .display-2, .display-3, .display-4 {
+    color: $text-color;
+  }
+  .display-4 {
+    font-size: 3rem;
+  }
   .lead {
     color: $text-color;
-    font-size: 3rem;
+    font-size: 1.25rem;
   }
   .desc {
     color: $muted-light;
@@ -275,6 +277,9 @@ hr {
   .sidebar, .sidebar p, .sidebar li,
   .callout, .callout p, .callout li {
     font-size: 0.9rem;
+  }
+  .lead {
+    font-size: 2.25rem;
   }
 }
 
@@ -400,7 +405,7 @@ hr {
 
   /* Create the parallax scrolling effect */
   //background-attachment: fixed;
-  background-position: center;
+  //background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -423,20 +428,23 @@ hr {
   }
   h1 {
     color: #fff;
+    font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.1em;
   }
   .desc {
-    @extend h3;
+    font-size: 1.25rem;
     font-style: italic;
     font-weight: 300;
     color: #fff;
+    display: none;
   }
   @media screen and (min-width: $break-md) {
-    h1 { font-size: 3.5rem; }
+    h1 { font-size: 3rem; }
+    .desc { display: block; font-size: 1.5rem; }
   }
   @media screen and (min-width: $break-lg) {
-    h1 { font-size: 4rem; }
+    h1 { font-size: 3.5rem; }
   }
 }
 
@@ -456,15 +464,18 @@ svg.back {
 
 .numerals {
   font-family: $disp-font;
-  //color: $muted-light;
   margin-right: 0.2em;
+
   &.web { color: $second-color; }
+  &.print { color: $primary-color; }
+  &.digital { color: $third-color; }
 }
 
-.portfolio {
+.row {
+  //margin-bottom: 1em;
+
   .col, .col-md-4, .col-md-6, .col-md-8 {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-right: 0;
   }
   img {
     width: 100%;
@@ -488,12 +499,24 @@ footer {
     font-size: $text-sm;
     margin-top: 0.4em;
   }
+  strong {
+    color: #fff;
+  }
 
   .contact {
     font-size: $text-sm;
     float: left;
     margin-left: 0.5em;
   }
+
+  svg.icon {
+    fill: #fff;
+
+    &:hover {
+      fill: rgba(255,255,255, 0.8);
+    }
+  }
+
 
   a, a:link, a:visited {
     color: #fff;

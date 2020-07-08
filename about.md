@@ -43,7 +43,7 @@ title: About
         <div class="row">
           <div class="col-md-4">
             <h4>Professional</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Project and team management</li>
               <li>Interpersonal / client relations</li>
               <li>Design systems</li>
@@ -56,7 +56,7 @@ title: About
           </div>
           <div class="col-md-4">
             <h4>Technical</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Adobe Creative Suite</li>
               <li>HTML / CSS</li>
               <li>Javascript</li>
@@ -67,7 +67,7 @@ title: About
           </div>
           <div class="col-md-4">
             <h4>Personal</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Excellent communicator</li>
               <li>Critical thinker</li>
               <li>Collaborative</li>
@@ -87,15 +87,15 @@ title: About
       <table class="table callout">
         <tbody>
           <tr>
-            <td scope="row" class="lead">2</td>
+            <td scope="row" class="display-4">2</td>
             <td class="desc">Children being wrangled</td>
           </tr>
           <tr>
-            <td scope="row" class="lead">12</td>
+            <td scope="row" class="display-4">12</td>
             <td class="desc">Different fruits and veges being grown in our garden</td>
           </tr>
           <tr>
-            <td scope="row" class="lead">{{ "today" | date: "%d" | plus: 182 | times: 2 }}</td>
+            <td scope="row" class="display-4">{{ "today" | date: "%d" | plus: 182 | times: 2 }}</td>
             <td class="desc">Cups of coffee consumed</td>
           </tr>
         </tbody>
