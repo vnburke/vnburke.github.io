@@ -79,7 +79,7 @@ title: About
       </div>
 
       <br />
-      <a href="/contact" class="btn btn-primary">Let's build stuff!</a>
+      <a href="mailto:vanessanburke@gmail.com" class="btn btn-primary">Let's build stuff!</a>
     </div>
     <!-- Sidebar -->
     <div class="col-md-3 order-last sidebar">
