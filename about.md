@@ -95,7 +95,7 @@ title: About
             <td class="desc">Different fruits and veges being grown in our garden</td>
           </tr>
           <tr>
-            <td scope="row" class="display-4">{{ "today" | date: "%d" | plus: 182 | times: 2 }}</td>
+            <td scope="row" class="display-4">{{ "today" | date: "%d" | plus: 182 | times: 1.75 | round }}</td>
             <td class="desc">Cups of coffee consumed</td>
           </tr>
         </tbody>
