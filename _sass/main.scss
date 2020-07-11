@@ -1,7 +1,7 @@
 /* Stylesheet for vnburke portfolio
  *
  * vanessanburke@gmail.com
- * Last updated April 2020
+ * Last updated July 2020
  */
 
 /* Colours */
@@ -400,11 +400,11 @@ hr {
 // Title banner
 .banner {
   position: relative;
-  height: 40vh;
+  height: 25vh;
   margin-bottom: 1rem;
 
   /* Create the parallax scrolling effect */
-  //background-attachment: fixed;
+  background-attachment: scroll;//fixed;
   //background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -440,10 +440,12 @@ hr {
     display: none;
   }
   @media screen and (min-width: $break-md) {
-    h1 { font-size: 3rem; }
+    height: 30vh;
+    h1 { font-size: 3rem; margin-top: 0; }
     .desc { display: block; font-size: 1.5rem; }
   }
   @media screen and (min-width: $break-lg) {
+    height: 35vh;
     h1 { font-size: 3.5rem; }
   }
 }
@@ -474,12 +476,15 @@ svg.back {
 .row {
   //margin-bottom: 1em;
 
-  .col, .col-md-4, .col-md-6, .col-md-8 {
-    padding-right: 0;
-  }
   img {
     width: 100%;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: $break-md) {
+  .col, .col-md-4, .col-md-6, .col-md-8 {
+    padding-right: 0;
   }
 }
 
