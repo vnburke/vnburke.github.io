@@ -9,6 +9,12 @@ client: Vice-Provost and Associate Vice-President (Information Technology), Univ
 services: Communications, Prototyping, Front-End Development
 tools: Adobe Illustrator, Adobe Photoshop, Moodle LMS
 team: Centre for Teaching and Learning (CTL)
+lingo: <dl>
+        <dt>Learning management system (LMS)</dt>
+        <dd>System specifically designed for the delivery of educational courses or training</dd>
+        <dt>Centre for Teaching and Learning (CTL)</dt>
+        <dd>Central unit at the U&nbsp;of&nbsp;A promoting excellence in university teaching, leading to engaging and meaningful learning experiences for students</dd>
+      </dl>
 ---
 <div class="container">
   <div class="row">
@@ -17,42 +23,9 @@ team: Centre for Teaching and Learning (CTL)
       <h2><span class="numerals {{ page.type }}">00</span> Background</h2>
       <p>When Blackboard announced it would be terminating its support for Vista, the University of Alberta had a decision to make about its learning management system (LMS). In 2010, the Vice-President (Information Technology) created an arm's length committee to research and consult with the University community on the choice of the next <abbr title="Learning management system">LMS</abbr>. The committee decided that the institution should use the open-source system, Moodle, to power <em>eClass</em>&mdash;the centrally managed learning management system.</p>
       <h2><span class="numerals {{ page.type }}">01</span> Discovery</h2>
-      <p>Although the central system supported many courses, instructors and students, there were still a fair number of faculties or departments supporting their own learning management systems because they did not feel the central system was meeting their needs.</p>
+      <p>Although the central system supported many courses, instructors and students, there were still a fair number of faculties or departments <strong>supporting their own learning management systems</strong> because <strong>the central solution was not meeting their needs</strong>.</p>
       <p>Change management was going to be key for the success of the transition. Part of my role on this project included devising and executing a communications plan to make sure instructors and students alike were aware of the changes that were coming and the timelines associated with the transition.</p>
-      <div class="container callout">
-        <div class="row">
-          <div class="col-md-4">
-            <table class="table callout">
-              <tbody>
-                <tr>
-                  <td class="text-center"><span class="display-3">18</span><br />
-                  <span class="lead">faculties</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-md-4">
-            <table class="table callout">
-              <tbody>
-                <tr>
-                  <td class="text-center"><span class="display-3">5</span><br />
-                  <span class="lead">campuses</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-md-4">
-            <table class="table callout">
-              <tbody>
-                <tr>
-                  <td class="text-center"><span class="display-3">6000</span><br />
-                  <span class="lead">courses</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+
       <h2><span class="numerals {{ page.type }}">02</span> Ideation + Design</h2>
       <table class="table">
         <tbody>
@@ -72,13 +45,78 @@ team: Centre for Teaching and Learning (CTL)
             <th scope="row">Community engagement</th>
             <td>Because Moodle is open source, there was the opportunity to develop or support features that were important to the community. We invited instructors to send in their feedback and suggestions and kept a visible list of enhancements under investigation or slated for integration.</td>
           </tr>
+          <tr>
+            <th scope="row">Updating and integrating look and feel</th>
+            <td>Working closely with the agile development team at <abbr title="Centre for Teaching and Learning">CTL</abbr>, I made sure the responsive theme was compatible across devices and developed in alignment with the U of A style guide, for a more integrated experience.</td>
+          </tr>
         </tbody>
       </table>
-      <p></p>
-      <p>Working closely with the agile development team at <abbr title="Centre for Teaching and Learning">CTL</abbr>, I made sure the responsive theme was developed to align with the U of A style guide.</p>
       <h2><span class="numerals {{ page.type }}">03</span> Solution</h2>
+      <div class="container callout">
+        <div class="row">
+          <div class="col-md-3">
+            <table class="table callout">
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <strong>Initial Pilot</strong><br />
+                    <span class="display-3">10</span><br />
+                    <span class="lead">courses</span><br />
+                    <em>Winter 2011</em>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-3">
+            <table class="table callout">
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <strong>Early Adopters</strong><br />
+                    <span class="display-3">1600</span><br />
+                    <span class="lead">courses</span><br />
+                    <em>Fall 2011</em>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-3">
+            <table class="table callout">
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <strong>Early Adopters</strong><br />
+                    <span class="display-3">2400</span><br />
+                    <span class="lead">courses</span><br />
+                    <em>Winter 2012</em>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-3">
+            <table class="table callout">
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <strong>First Major Term</strong><br />
+                    <span class="display-3">3500</span><br />
+                    <span class="lead">courses</span><br />
+                    <em>Fall 2012</em><br />
+                    Vista decommissioned
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
       <p><em>eClass</em> provided instructors with a customizable platform to host their class sites that included built in tools such as calendars, notices, discussion forums and quizzes. It also gave students a more integrated experience&mdash;each having a personal portal with their course sites listed upon login.</p>
       <br />
+
+
       <table class="table callout">
         <tbody>
           <tr>

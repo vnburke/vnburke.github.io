@@ -9,20 +9,25 @@ client: Department of Physics, University of Alberta
 services: User Experience, Prototyping, Front End Development, Project Management
 tools: Google Forms, Google Sheets, Google Script
 team: Ethan Gaudet (Web Developer)
+lingo: <dl>
+    <dt>Principal investigator (PI)</dt>
+    <dd>The lead researcher of a research lab or group</dd>
+  </dl>
 ---
 <div class="container">
   <div class="row">
     {% include proj-details.html %}
     <div class="col-sm">
       <h2><span class="numerals {{ page.type }}">00</span> Background</h2>
-      <p>The Department of Physics is home to a number of in-house shops which provide services to their faculty members and graduate students for a nominal fee. Charges are collected by the shops, then billed to quarterly back to the principal investigator's (PI) account.</p>
-      <p>However, the process for tracking and billing for these services were not consistent across the shops and much of the tracking was recorded manually on paper then transcribed to a spreadsheet at a later date. Physics approached us to help them with a cost-effective way to streamline this process.</p>
+      <p>The Department of Physics is home to a number of in-house shops which provide services to their faculty members and graduate students for a nominal fee. Charges are collected by the shops, then billed on a quarterly basis back to client&mdash;principal investigator (PI)&mdash;accounts. Physics approached us to help them with a cost-effective way to streamline this process.</p>
       <h2><span class="numerals {{ page.type }}">01</span> Discovery</h2>
+      <p>In reviewing the shop billing and chargeback process from start to finish with the administrators and one of the shop supervisors, we found that there were a number of paper documents used for tracking hours and materials. Because the process for tracking and billing for services was not consistent for all shops, manually transcribing and compiling these documents into usable reports was very labour intensive.</p>
+      <p><img src="/assets/images/physics-shops-process.png" alt="Physics shop workflow diagram" /></p>
       <table class="table">
         <thead class="thead-light">
           <tr>
             <th style="width:50%">Project, time, and materials tracking</th>
-            <th>Chargeback and reporting</th>
+            <th>Reporting and chargeback</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +42,7 @@ team: Ethan Gaudet (Web Developer)
               <ul>
                 <li>Manual entry and merging of data from all three shops in order to issue invoices</li>
                 <li>Email notices to clients, compiled and sent one-by-one</li>
+                <li>Billed quarterly because of the effort required to compile reports; would like to bill more frequently</li>
                 <li>Extensive manual effort to recompile data into a different reporting format (for example, reporting the hours by shop versus by client)</li>
               </ul>
             </td>
@@ -44,13 +50,19 @@ team: Ethan Gaudet (Web Developer)
         </tbody>
       </table>
       <h2><span class="numerals {{ page.type }}">02</span> Ideation + Development</h2>
-      <p>After weighing a number of options, we decided that we could implement a solution using familiar and free tools&mdash;the Google Suite. We were able to leverage Google Forms, Sheets and Scripts to create an easy-to-use online system for tracking time and materials for the technicians, which then allowed department administrators to run automated reports on the data whenever necessary.</p>
+      <p>Administrators and shop staff were already using spreadsheets in some capacity for tracking and reporting. After weighing the pros and cons of a new development project, we decided to implement a lightweight solution using familiar and free tools&mdash;the Google Suite.</p>
+      <h3>Project, time and materials tracking</h3>
+      <p>We were able to leverage Google Forms, Sheets, Calendar, and Scripts to create an easy-to-use online system for technicians to track their time and materials.</p>
+      <img src="/assets/images/physics-shops-tracking.png" alt="Physics shop project tracking" />
+      <h3>Reporting and chargeback</h3>
+      <p>Having everything stored in Google Drive allowed department administrators to run automated reports on current data whenever necessary.</p>
+      <img src="/assets/images/physics-shops-reporting.png" alt="Physics shop reporting" />
       <h2><span class="numerals {{ page.type }}">03</span> Solution</h2>
       <table class="table">
         <thead class="thead-light">
           <tr>
             <th style="width:50%">Project, time, and materials tracking</th>
-            <th>Chargeback and reporting</th>
+            <th>Reporting and chargeback</th>
           </tr>
         </thead>
         <tbody>
@@ -58,14 +70,14 @@ team: Ethan Gaudet (Web Developer)
             <td>
               <ul>
                 <li>The process to track time and materials was streamlined across all shops</li>
-                <li>Technicians could use a Google form or Google sheet to track their time and materials used for each client</li>
-                <li>Time tracked was integrated with Google calendar so they could see their past entries</li>
+                <li>Technicians could use a Google Form or Google Sheet to track their time and materials used for each client</li>
+                <li>Time tracked was integrated with Google Calendar so they could see their past entries</li>
               </ul>
             </td>
             <td>
               <ul>
-                <li>Reports could be automatically generated by month, quarter or year</li>
-                <li>Customized reports could be sent via email to individual researchers with their charges for that period</li>
+                <li>Billing reports could be automatically generated by month, quarter or year</li>
+                <li>Customized invoices could be sent via email to individual researchers with their charges for that period</li>
                 <li>Administrators could run reports to view data on shop utilization or the allocation of technician hours</li>
               </ul>
             </td>
