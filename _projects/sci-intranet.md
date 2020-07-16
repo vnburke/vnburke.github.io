@@ -10,11 +10,11 @@ services: User Experience, Prototyping, Front End Development, Project Managemen
 tools: Adobe Illustrator, Adobe Photoshop, Google Sites
 team:
 lingo: <dl>
-    <dt>Faculty</dt>
-    <dd>Capital <em>F</em>; Faculty of Science</dd>
-    <dt>faculty</dt>
-    <dd>Lowercase <em>f</em>; faculty member; professor</dd>
-  </dl>
+        <dt>Faculty</dt>
+        <dd>Capital <em>F</em>; Faculty of Science</dd>
+        <dt>faculty</dt>
+        <dd>Lowercase <em>f</em>; faculty member; professor</dd>
+      </dl>
 ---
 <div class="container">
   <div class="row">
@@ -51,7 +51,7 @@ lingo: <dl>
         </tbody>
       </table>
       <h3>Content survey</h3>
-      <p>A content survey was sent out to all prospective users of the internal Science site. We used the 135 responses to help prioritize features, shape the content and inform the design.</p>
+      <p>A content survey was sent out to all prospective users of the internal Science site to find out what would be most useful, what could be made easier to find, and what needed clarity. We used the 135 responses to help prioritize features, shape the content and inform the design.</p>
       <div class="container callout">
         <div class="row">
           <div class="col"><img src="/assets/images/sci-intranet-surveys.png" alt="Science Intranet content survey" /></div>
