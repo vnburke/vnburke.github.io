@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 <script>
-  var descriptors = ['UX enthusiast', 'front-end dev', 'creative', 'problem solver'];
+  var descriptors = ['UX enthusiast', 'front-end dev', 'communicator', 'creative', 'problem solver'];
 
   textSequence(0);
   function textSequence(i) {
