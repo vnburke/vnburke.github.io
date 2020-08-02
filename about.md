@@ -95,7 +95,22 @@ title: About
             <td class="desc">Different fruits and veges being grown in our garden</td>
           </tr>
           <tr>
-            <td scope="row" class="display-4">{{ "today" | date: "%d" | plus: 182 | times: 1.75 | round }}</td>
+            <td scope="row" class="display-4">
+              <script type="text/javascript">
+                // Set date variables
+                var start = new Date("01/01/2020");
+                var today = new Date();
+
+                // Calculate time difference of two dates
+                var timeDiff = today.getTime() - start.getTime();
+                // Calculate the number of days between two dates
+                var days = timeDiff / (1000 * 3600 * 24);
+                // Calculate cups of coffee
+                var cups = Math.round(days * 1.75);
+                //To display the final no. of days (result)
+                document.write(cups);
+              </script>
+            </td>
             <td class="desc">Cups of coffee consumed</td>
           </tr>
         </tbody>
