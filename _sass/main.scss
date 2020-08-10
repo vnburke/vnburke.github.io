@@ -163,7 +163,16 @@ hr {
 }
 
 /* Navigation */
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .navbar {
+  animation: 1s ease-out 0s 1 slideFromTop;
   background: rgba(255,255,255, 0.8);
   padding: 1.5rem;
 }
